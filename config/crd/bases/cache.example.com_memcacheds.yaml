@@ -40,7 +40,10 @@ spec:
                   to remove/update
                 type: string
               size:
+                description: Size is the size of the memcached deploymentSize int32
+                  `json:"size"`
                 format: int32
+                minimum: 0
                 type: integer
             required:
             - size
